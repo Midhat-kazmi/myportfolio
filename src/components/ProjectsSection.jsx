@@ -9,7 +9,7 @@ export const ProjectsSection = () => {
         "A complete multivendor eCommerce platform using the MERN stack with authentication, product management, and seller dashboards.",
       image:
         "https://res.cloudinary.com/dgve6ewpr/image/upload/v1752440757/Untitled_c8xmgv.jpg",
-      tags: ["React", "Node.js", "Express", "MongoDB", "Redux"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe"],
       liveLink: "https://multivendor-five.vercel.app/",
       githubUrl: "https://github.com/Midhat-kazmi/multivendor",
     },
