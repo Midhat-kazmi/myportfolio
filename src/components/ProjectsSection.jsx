@@ -13,7 +13,7 @@ export const ProjectsSection = () => {
       tags: ["React", "Node.js", "Express", "MongoDB", "Redux"],
       liveLink: "https://multivendor-five.vercel.app/",
       githubUrl: "https://github.com/Midhat-kazmi/multivendor",
-      demoLink: "#", // Placeholder
+      demoLink: "#", // Will be updated with a YouTube video later
     },
   ];
 
@@ -67,43 +67,27 @@ export const ProjectsSection = () => {
                   {project.description}
                 </p>
 
-                {/* Links */}
-                <div className="flex items-center space-x-4 mb-4">
+                {/* Buttons: Live + GitHub */}
+                <div className="flex flex-col sm:flex-row gap-3 mb-4">
                   <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-purple-600 transition"
+                    className="w-full text-center px-4 py-2 rounded-full bg-green-100 text-green-700 font-medium hover:bg-green-200 transition"
                   >
-                    <ExternalLink size={22} />
+                     Live URL
                   </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-blue-500 transition"
+                    className="w-full text-center px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition"
                   >
-                    <Github size={22} />
+                     GitHub Repo
                   </a>
                 </div>
 
-                {/* Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full text-center px-4 py-2 rounded-full bg-gray-100 text-gray-600 font-medium hover:bg-gray-200 transition"
-                  >
-                    Coming Soon
-                  </a>
-                  <Link
-                    to="/project"
-                    className="w-full text-center px-4 py-2 rounded-full bg-pink-500 text-white font-semibold hover:bg-pink-600 transition"
-                  >
-                    See Details
-                  </Link>
-                </div>
+               
               </div>
             </div>
           ))}
