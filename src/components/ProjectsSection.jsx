@@ -23,7 +23,7 @@ export const ProjectsSection = () => {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16">
           <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-            Featured Project
+            Featured Projects
           </span>
         </h2>
 
