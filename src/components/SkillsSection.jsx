@@ -10,6 +10,9 @@ const skills = [
   { name: "Express", category: "backend" },
   { name: "MongoDB", category: "backend" },
   { name: "Git/GitHub", category: "tools" },
+  { name: "Firebase", category: "tools" },
+  { name: "Stripe", category: "tools" },
+  { name: "Cloudinary", category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -22,21 +25,21 @@ export const SkillsSection = () => {
   );
 
   return (
-    <section id="skills" className="py-16 px-4 bg-gray-50">
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-          My <span className="text-primary">Skills</span>
+    <section id="skills" className="w-full bg-gray-50 py-10 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center text-2xl font-bold mb-6">
+          Skills & Technologies
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex justify-center flex-wrap gap-2 mb-6">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${
+              className={`px-3 py-1 rounded-full text-xs font-medium border transition-all ${
                 activeCategory === category
-                  ? "bg-primary text-white border-primary shadow-md"
-                  : "bg-white text-primary border-gray-300 hover:bg-primary/10"
+                  ? "bg-blue-600 text-white border-blue-600"
+                  : "bg-white text-blue-600 border-gray-300 hover:bg-blue-50"
               }`}
             >
               {category}
@@ -44,11 +47,11 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {filteredSkills.map((skill) => (
             <div
               key={skill.name}
-              className="bg-white rounded-xl p-4 shadow hover:shadow-md transition duration-300 text-center text-sm font-semibold text-gray-700"
+              className="bg-white rounded-lg text-center text-sm font-medium p-3 shadow hover:shadow-md transition"
             >
               {skill.name}
             </div>

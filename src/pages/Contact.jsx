@@ -1,3 +1,4 @@
+
 import {
   Linkedin,
   Mail,
@@ -8,7 +9,7 @@ import {
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 
-export const ContactSection = () => {
+export const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
